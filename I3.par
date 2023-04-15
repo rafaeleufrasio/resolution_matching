@@ -1,0 +1,130 @@
+2.0    = Version of Tiny Tim that generated this file
+irac_psf      = rootname of output image file(s)
+3         = instrument code
+IRAC_6.3_micron        = instrument name
+1.210000  = PSF model X-axis pixel size in arcsec (might be subsampled)
+1.210000  = PSF model X-axis pixel size in arcsec (might be subsampled)
+0  = Is PSF subsampled? (0 = no, 1 = yes)
+255    = model grid size (n by n pixels)
+512    = Nyquist PSF grid size (n by n pixels)
+0.000000  = Jitter (arcsec) (ignored if < 0.001)
+/media/Master/stinytim/irac3.band   = instrument throughput table file used
+Blackbody(2000K)   = spectrum type or spectrum file used
+1        = Skip wavelengths with low weights? (1=yes)
+0.010000  = Weight skip low weight limit/max weight
+17    = number of wavelengths in model
+4.900000  1.55538e-05     = Wavelength 1 (microns) & weight
+5.002600  0.0553163     = Wavelength 2 (microns) & weight
+5.105200  0.0876385     = Wavelength 3 (microns) & weight
+5.207800  0.0857278     = Wavelength 4 (microns) & weight
+5.310400  0.078526     = Wavelength 5 (microns) & weight
+5.413000  0.084392     = Wavelength 6 (microns) & weight
+5.515600  0.0761216     = Wavelength 7 (microns) & weight
+5.618200  0.0749909     = Wavelength 8 (microns) & weight
+5.720800  0.0721738     = Wavelength 9 (microns) & weight
+5.823400  0.0692636     = Wavelength 10 (microns) & weight
+5.926000  0.0664792     = Wavelength 11 (microns) & weight
+6.028600  0.0626466     = Wavelength 12 (microns) & weight
+6.131200  0.0575588     = Wavelength 13 (microns) & weight
+6.233800  0.0542959     = Wavelength 14 (microns) & weight
+6.336400  0.052049     = Wavelength 15 (microns) & weight
+6.439000  0.0226857     = Wavelength 16 (microns) & weight
+6.541600  0.000118896     = Wavelength 17 (microns) & weight
+1        = number of detector positions
+128 128     = X & Y position 1
+1    = Adjust for field dependent aberrations? (1=yes)
+1    = Use zonal error maps? (1=yes)
+1    = Use new secondary map? (1=yes)
+0    = Write pupil map? (1=yes)
+0    = Write OPD map? (1=yes)
+0    = Write Nyquist PSF? (1=yes)
+#---------------------------------------------------------------
+# Zernike aberration coefficient file for IRAC 5.8 micron camera
+# on-orbit measured values
+# June 2006
+#---------------------------------------------------------------
+  0.       # Z1 = (Not used)
+  0.       # Z2 = X tilt
+  0.       # Z3 = Y tilt
+  0.145    # Z4 = Focus for center of detector
+  0.002    # Z5 = 0 degree astigmatism
+ -0.135    # Z6 = 45 degree astigmatism
+  0.002    # Z7 = X coma
+  0.065    # Z8 = Y coma
+ -0.017    # Z9 = X clover
+ -0.034    # Z10 = Y clover
+ -0.074    # Z11 = 3rd order spherical
+  0.       # Z12 = 0 degree Spherical astigmatism
+  0.       # Z13 = 45 degree Spherical astigmatism
+  0.       # Z14 = X Ashtray
+  0.       # Z15 = Y Ashtray
+  0.       # Z16
+  0.       # Z17
+  0.       # Z18
+  0.       # Z19
+  0.       # Z20
+  0.       # Z21
+  0.       # Z22 = 5th order spherical
+#-------------------------------------------------------------
+# SIRTF OTA parameter file
+# Created by John Krist, January 2000
+# These are preliminary settings
+#-------------------------------------------------------------
+ 850.0      = OTA diameter in mm
+ 0.3765     = Central obscuration radius normalized to pupil radius
+ 0.0        = OTA spider rotation offset (degrees)
+#-------------------------------------------------------------
+# IRAC 6.3 micron instrument parameter file
+# Created by John Krist, January 2000
+# These are preliminary settings
+#-------------------------------------------------------------
+ 4.5  7.0   = IRAC 6.3 um camera min, max wavelength (microns)
+ 1.21       = IRAC nominal pixel X size in arcsec (assume square pixels)
+ 1.21       = IRAC nominal pixel Y size in arcsec (assume square pixels)
+ 256  256   = IRAC detector dimensions in pixels
+2.843  3.607  = IRAC detector center offset from telescope axis (arcmin)
+ -90.0      = Degrees ccw from OTA z-y system to detector x-y
+          0 = Flip -X to X? (1 = yes)
+          0 = Flip -Y to Y? (1 = yes)
+#
+#  Focus field dependence relation matrix
+#
+  -0.00106602  -0.00461781   0.00954705  3.27273e-05
+   0.00513791 -2.46543e-05 -0.000119481 -1.38248e-06
+   0.00973462  2.72476e-05 -0.000314727 -5.11626e-09
+ -0.000125914 -1.48732e-06 -5.18540e-08  1.58401e-07
+#
+#  0d astigmatism (Z5) field dependence relation matrix
+#
+  2.73421e-06    0.0311626   0.00247831 -5.42033e-05
+    0.0436962  0.000216704  2.47616e-05  2.65762e-07
+  -0.00224479 -2.73396e-05  3.00130e-08  6.20336e-07
+ -0.000105324 -5.89840e-07  1.13453e-06  1.97597e-08
+#
+#  45d astigmatism (Z6) field dependence relation matrix
+# 
+  5.90203e-06    0.0413362  0.000179502 -2.94413e-05
+   -0.0294941  -0.00446422  5.73967e-05  8.64732e-06
+ -3.40066e-05 -0.000159173 -1.25987e-06  1.13046e-07
+  3.07364e-05  8.20697e-06  1.84889e-07 -5.79758e-05
+#
+#  X coma (Z7) field dependence relation matrix
+#
+  2.27007e-05 -8.65216e-05  1.12116e-05  6.91886e-07
+ -0.000469962  1.08645e-05  4.82959e-05  2.43915e-06
+  0.000106806  2.30064e-06  3.40620e-07 -2.02872e-07
+  6.31290e-05  3.06190e-06  6.68990e-05 -6.38358e-07
+#
+#  Y coma (Z8) field dependence relation matrix
+#
+ -1.87629e-05 -0.000328353  1.98944e-05  6.24560e-05
+ -2.18643e-05  9.67433e-05  9.68539e-07 -1.12220e-06
+  6.50666e-06  4.90463e-05 -5.84206e-07  6.69340e-05
+  6.93489e-07 -5.03529e-07 -6.29843e-08  2.60142e-07
+#
+#  Spherical (Z11) field dependence relation matrix
+#
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000

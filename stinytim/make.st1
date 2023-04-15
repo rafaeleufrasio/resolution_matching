@@ -1,0 +1,21 @@
+OBJS1 = entry.o gridsize.o misc.o param.o rdpupil.o spectrum.o stiny1.o
+
+.c.o:
+	cc $(CFLAGS) -c $<
+
+stiny1: $(OBJS1)
+	cc $(OBJS1) $(LFLAGS) -o stiny1
+
+entry.o:	entry.c stinytim.h
+
+gridsize.o:	gridsize.c stinytim.h
+
+misc.o:		misc.c stinytim.h
+
+param.o:	param.c stinytim.h
+
+rdpupil.o:	rdpupil.c stinytim.h
+
+spectrum.o:	spectrum.c stinytim.h
+
+stiny1.o:	stiny1.c stinytim.h

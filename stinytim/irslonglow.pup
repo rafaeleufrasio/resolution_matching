@@ -1,0 +1,12 @@
+#-------------------------------------------------------------
+# IRS long-low instrument parameter file
+# Created by John Krist, June 2006
+#-------------------------------------------------------------
+# The pixel size given below is 1/3 the slit width
+ 14.0 40.0  = Instrument min, max wavelength (microns)
+ 3.5        = X Pixel size in arcsec (1/3 slit width)
+ 3.5        = Y Pixel size in arcsec (1/3 slit width)
+ 4.41 -14.00 = Detector center offset from telescope axis (arcmin)
+  -1.2      = Degrees ccw from OTA z-y system to detector x-y
+          0 = Flip -X to X? (1 = yes)
+          0 = Flip -Y to Y? (1 = yes)

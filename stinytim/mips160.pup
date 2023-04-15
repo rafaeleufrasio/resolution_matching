@@ -1,0 +1,57 @@
+#-------------------------------------------------------------
+# MIPS 160 micron camera instrument parameter file
+# Created by John Krist, March 2000
+# These are preliminary settings
+#-------------------------------------------------------------
+115.0 210.0 = MIPS 160 micron min, max wavelength (microns)
+ 15.965     = MIPS 160 micron nominal X pixel size in arcsec 
+ 17.963     = MIPS 160 micron nominal Y pixel size in arcsec
+ 20  2      = MIPS 160 micron camera detector dimensions in pixels
+-7.35 12.11 = MIPS 160 micron detector center offset from telescope axis (arcmin)
+  -1.561    = Degrees ccw from OTA z-y system to detector x-y
+          0 = Flip -X to X? (1 = yes)
+          0 = Flip -Y to Y? (1 = yes)
+-2.64 2.64  = Min, max X field offsets from camera center (arcmin)
+-1.70 1.70  = Min, max Y field offsets from camera center (arcmin)
+#
+#  Focus field dependence relation matrix
+#
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+#
+#  0d astigmatism (Z5) field dependence relation matrix
+#
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+#
+#  45d astigmatism (Z6) field dependence relation matrix
+# 
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+# 
+#  X coma (Z7) field dependence relation matrix
+#
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+#
+#  Y coma (Z8) field dependence relation matrix
+#
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+#
+#  Spherical (Z11) field dependence relation matrix
+#
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000

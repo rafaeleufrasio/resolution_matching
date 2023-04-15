@@ -1,0 +1,8 @@
+#-------------------------------------------------------------
+# SIRTF OTA parameter file
+# Created by John Krist, January 2000
+# These are preliminary settings
+#-------------------------------------------------------------
+ 850.0      = OTA diameter in mm
+ 0.3765     = Central obscuration radius normalized to pupil radius
+ 0.0        = OTA spider rotation offset (degrees)

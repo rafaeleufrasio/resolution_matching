@@ -1,0 +1,146 @@
+2.0    = Version of Tiny Tim that generated this file
+mips_3_psf      = rootname of output image file(s)
+9         = instrument code
+MIPS_160_micron        = instrument name
+15.965000  = PSF model X-axis pixel size in arcsec (might be subsampled)
+17.962999  = PSF model X-axis pixel size in arcsec (might be subsampled)
+0  = Is PSF subsampled? (0 = no, 1 = yes)
+100    = model grid size (n by n pixels)
+512    = Nyquist PSF grid size (n by n pixels)
+0.000000  = Jitter (arcsec) (ignored if < 0.001)
+/media/Master/stinytim/mips160.band   = instrument throughput table file used
+Blackbody(20K)   = spectrum type or spectrum file used
+1        = Skip wavelengths with low weights? (1=yes)
+0.010000  = Weight skip low weight limit/max weight
+30    = number of wavelengths in model
+119.177002  0.000468416     = Wavelength 1 (microns) & weight
+121.321999  0.00090845     = Wavelength 2 (microns) & weight
+123.505997  0.00140543     = Wavelength 3 (microns) & weight
+125.728996  0.00232547     = Wavelength 4 (microns) & weight
+127.992996  0.0041494     = Wavelength 5 (microns) & weight
+130.296005  0.00690175     = Wavelength 6 (microns) & weight
+132.641998  0.015222     = Wavelength 7 (microns) & weight
+135.029007  0.024382     = Wavelength 8 (microns) & weight
+137.460007  0.0333409     = Wavelength 9 (microns) & weight
+139.934006  0.0430854     = Wavelength 10 (microns) & weight
+142.453003  0.0476734     = Wavelength 11 (microns) & weight
+145.016998  0.0523468     = Wavelength 12 (microns) & weight
+147.626999  0.0569436     = Wavelength 13 (microns) & weight
+150.285004  0.0615981     = Wavelength 14 (microns) & weight
+152.990005  0.0650997     = Wavelength 15 (microns) & weight
+155.744003  0.0688025     = Wavelength 16 (microns) & weight
+158.546997  0.0729063     = Wavelength 17 (microns) & weight
+161.401001  0.0749953     = Wavelength 18 (microns) & weight
+164.306000  0.0747317     = Wavelength 19 (microns) & weight
+167.264008  0.069899     = Wavelength 20 (microns) & weight
+170.274002  0.062773     = Wavelength 21 (microns) & weight
+173.339005  0.0508395     = Wavelength 22 (microns) & weight
+176.459000  0.0390361     = Wavelength 23 (microns) & weight
+179.636002  0.0276099     = Wavelength 24 (microns) & weight
+182.869003  0.0180202     = Wavelength 25 (microns) & weight
+186.160995  0.010389     = Wavelength 26 (microns) & weight
+189.511993  0.0064869     = Wavelength 27 (microns) & weight
+192.923004  0.00412516     = Wavelength 28 (microns) & weight
+196.395004  0.00236832     = Wavelength 29 (microns) & weight
+199.929993  0.00116646     = Wavelength 30 (microns) & weight
+1        = number of detector positions
+0 0     = X & Y position 1
+1    = Adjust for field dependent aberrations? (1=yes)
+1    = Use zonal error maps? (1=yes)
+1    = Use new secondary map? (1=yes)
+0    = Write pupil map? (1=yes)
+0    = Write OPD map? (1=yes)
+0    = Write Nyquist PSF? (1=yes)
+#---------------------------------------------------------------
+# Zernike aberration coefficient file for MIPS 160 microns
+# Preliminary values
+# Microns RMS for 33% obscured Zernike polynomials
+# March 2000
+#---------------------------------------------------------------
+  0.       # Z1 = (Not used)
+  0.       # Z2 = X tilt
+  0.       # Z3 = Y tilt
+  0.       # Z4 = Focus for center of detector
+  0.       # Z5 = 0 degree astigmatism
+  0.       # Z6 = 45 degree astigmatism
+ -0.0227   # Z7 = X coma
+  0.2010   # Z8 = Y coma
+  0.       # Z9 = X clover
+  0.       # Z10 = Y clover
+  0.       # Z11 = 3rd order spherical
+  0.       # Z12 = 0 degree Spherical astigmatism
+  0.       # Z13 = 45 degree Spherical astigmatism
+  0.       # Z14 = X Ashtray
+  0.       # Z15 = Y Ashtray
+  0.       # Z16
+  0.       # Z17
+  0.       # Z18
+  0.       # Z19
+  0.       # Z20
+  0.       # Z21
+  0.       # Z22 = 5th order spherical
+#-------------------------------------------------------------
+# SIRTF OTA parameter file
+# Created by John Krist, January 2000
+# These are preliminary settings
+#-------------------------------------------------------------
+ 850.0      = OTA diameter in mm
+ 0.3765     = Central obscuration radius normalized to pupil radius
+ 0.0        = OTA spider rotation offset (degrees)
+#-------------------------------------------------------------
+# MIPS 160 micron camera instrument parameter file
+# Created by John Krist, March 2000
+# These are preliminary settings
+#-------------------------------------------------------------
+115.0 210.0 = MIPS 160 micron min, max wavelength (microns)
+ 15.965     = MIPS 160 micron nominal X pixel size in arcsec 
+ 17.963     = MIPS 160 micron nominal Y pixel size in arcsec
+ 20  2      = MIPS 160 micron camera detector dimensions in pixels
+-7.35 12.11 = MIPS 160 micron detector center offset from telescope axis (arcmin)
+  -1.561    = Degrees ccw from OTA z-y system to detector x-y
+          0 = Flip -X to X? (1 = yes)
+          0 = Flip -Y to Y? (1 = yes)
+-2.64 2.64  = Min, max X field offsets from camera center (arcmin)
+-1.70 1.70  = Min, max Y field offsets from camera center (arcmin)
+#
+#  Focus field dependence relation matrix
+#
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+#
+#  0d astigmatism (Z5) field dependence relation matrix
+#
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+#
+#  45d astigmatism (Z6) field dependence relation matrix
+# 
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+# 
+#  X coma (Z7) field dependence relation matrix
+#
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+#
+#  Y coma (Z8) field dependence relation matrix
+#
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+#
+#  Spherical (Z11) field dependence relation matrix
+#
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000

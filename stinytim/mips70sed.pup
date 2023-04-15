@@ -1,0 +1,13 @@
+#-------------------------------------------------------------
+# MIPS 70 micron SED instrument parameter file
+# Created by John Krist, March 2000
+# These are preliminary settings
+#-------------------------------------------------------------
+# The pixel size given below is 1/3 the slit width
+ 45.0 115.0 = MIPS 70 um channel min, max wavelength (microns)
+ 6.6        = MIPS 70 micron SED X pixel size in arcsec 
+ 6.6        = MIPS 70 micron SED Y pixel size in arcsec
+-6.53 -9.43 = MIPS 70 micron detector center offset from telescope axis (arcmin)
+   0.0      = Degrees ccw from OTA z-y system to detector x-y
+          0 = Flip -X to X? (1 = yes)
+          1 = Flip -Y to Y? (1 = yes)

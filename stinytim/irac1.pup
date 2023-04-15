@@ -1,0 +1,61 @@
+#-------------------------------------------------------------
+# IRAC 3.5 micron instrument parameter file
+# Created by John Krist, January 2000
+# These are preliminary settings
+#-------------------------------------------------------------
+ 2.5  4.5   = IRAC 3.5 um camera min, max wavelengths (microns)   
+ 1.21       = IRAC nominal pixel X size in arcsec (assume square pixels)
+ 1.21       = IRAC nominal pixel Y size in arcsec (assume square pixels)
+ 256  256   = IRAC detector dimensions in pixels
+2.86  3.737 = IRAC detector center offset from telescope axis (arcmin)
+ -90.0      = Degrees ccw from OTA z-y system to detector x-y
+          0 = Flip -X to X? (1 = yes)
+          0 = Flip -Y to Y? (1 = yes)
+#
+#  Focus field dependence relation matrix
+#
+  -0.00108862   0.00122025    0.0107892 -3.11211e-05
+  0.000818774 -2.90871e-05 -3.26449e-05 -1.92925e-07
+    0.0107874 -3.15147e-05 -0.000316100 -5.33563e-08
+ -3.29058e-05 -1.88809e-07 -5.97882e-08  4.50756e-10
+#
+#  0d astigmatism (Z5) field dependence relation matrix
+#
+  1.02276e-06 -0.000103568   0.00137740  1.18765e-05
+  0.000181287  8.18067e-07  2.37214e-05  3.34350e-08
+  -0.00137864 -2.30067e-05  1.09642e-08 -1.13070e-07
+ -1.29424e-05 -1.85321e-07  1.20382e-07  1.90220e-08
+#
+#  45d astigmatism (Z6) field dependence relation matrix
+# 
+  1.12504e-06  0.000103798  1.06719e-06  4.57891e-06
+  1.99290e-05  -0.00243446 -2.91881e-05  1.09704e-05
+  7.54171e-07 -3.16099e-05 -4.24184e-07  1.96987e-07
+  4.82686e-06  1.05929e-05 -1.95559e-08 -5.86347e-05
+#
+#  X coma (Z7) field dependence relation matrix
+#
+  9.45867e-07 -2.53278e-05  9.66660e-06  1.11834e-07
+  -0.00188318  4.22075e-05  3.98522e-05  9.38497e-07
+  5.46346e-05 -3.53101e-07 -1.17075e-07  1.77033e-07
+  5.47917e-05  1.25742e-06  6.79352e-05 -1.92739e-07
+#
+#  Y coma (Z8) field dependence relation matrix
+#
+  1.24874e-06  -0.00187963  5.13622e-05  5.38320e-05
+ -2.59058e-05  4.25972e-05  1.61869e-07  1.41759e-06
+  8.92352e-06  4.02819e-05  2.14845e-07  6.79971e-05
+  5.99170e-08  1.41423e-06  1.32082e-07 -2.77237e-07
+#
+#  Spherical (Z11) field dependence relation matrix
+#
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+#
+# Charge diffusion kernel
+#
+    0.0225000    0.0600000    0.0225000
+    0.0600000     0.670000    0.0600000
+    0.0225000    0.0600000    0.0225000

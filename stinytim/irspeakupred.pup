@@ -1,0 +1,12 @@
+#-------------------------------------------------------------
+# IRS red peakup instrument parameter file
+# Created by John Krist, June 2006
+#-------------------------------------------------------------
+ 17.9 26.6  = Instrument min, max wavelength (microns)
+ 1.835      = X Pixel size in arcsec
+ 1.835      = Y Pixel size in arcsec
+ 37   50    = Detector size (nx by ny pixels)
+ 11.63 2.00 = Detector center offset from telescope axis (arcmin)
+ -88.2      = Degrees ccw from OTA z-y system to detector x-y
+          0 = Flip -X to X? (1 = yes)
+          1 = Flip -Y to Y? (1 = yes)

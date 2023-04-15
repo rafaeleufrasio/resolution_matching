@@ -1,0 +1,40 @@
+OBJS2 = entry.o fft.o fitsio.o image.o intpsf.o map.o misc.o monopsf.o opd.o\
+	param.o polypsf.o psf.o pupil.o rdpupil.o stiny2.o
+
+.c.o:
+	cc $(CFLAGS) -c $<
+
+stiny2: $(OBJS2)
+	cc $(OBJS2) $(LFLAGS) -o stiny2
+
+entry.o:	entry.c stinytim.h
+
+fft.o:		fft.c stinytim.h
+
+fitsio.o:	fitsio.c stinytim.h
+
+image.o:	image.c stinytim.h
+
+intpsf.o:	intpsf.c stinytim.h
+
+map.o:		map.c stinytim.h
+
+misc.o:		misc.c stinytim.h
+
+monopsf.o:	monopsf.c stinytim.h
+
+opd.o:		opd.c stinytim.h
+
+param.o:	param.c stinytim.h
+
+polypsf.o:	polypsf.c stinytim.h
+
+psf.o:		psf.c stinytim.h
+
+pupil.o:	pupil.c stinytim.h
+
+rdpupil.o:	rdpupil.c stinytim.h
+
+spectrum.o:	spectrum.c stinytim.h
+
+stiny2.o:	stiny2.c stinytim.h

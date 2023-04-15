@@ -1,0 +1,170 @@
+#-------------------------------------------------------------
+# MIPS 70 micron Narrow Field (superres) camera instrument parameter file
+# Created by John Krist, June 2006
+# These are revised settings (pixel size, field offset, rotation)
+#-------------------------------------------------------------
+ 45.0 115.0 = MIPS 70 um camera min, max wavelength (microns)
+ 5.1023     = MIPS 70 micron X pixel size in arcsec 
+ 5.2525     = MIPS 70 micron Y pixel size in arcsec
+ 32  32     = MIPS 70 micron camera detector dimensions in pixels
+-7.12 -6.81 = MIPS 70 micron detector center offset from telescope axis (arcmin)
+ 188.470    = Degrees ccw from OTA z-y system to detector x-y
+          0 = Flip -X to X? (1 = yes)
+          0 = Flip -Y to Y? (1 = yes)
+   5.727    = Degrees ccw from OTA y system to scan axis
+########################################################################
+#  Scan position 1 (lower field)
+########################################################################
+-59.1273    = Scan position 1 field offset (arcsec)
+ 0.1242     = Focus (microns RMS) at scan position 1
+ 0.4795     = 0d astigmatism (microns RMS) at scan position 1
+-0.0449     = 45d astigmatism (microns RMS) at scan position 1
+ 0.0297     = X coma (microns RMS) at scan position 1
+-0.0070     = Y coma (microns RMS) at scan position 1
+ 0.0000     = Spherical (microns RMS) at scan position 1
+#
+#  Focus field dependence relation matrix (scan position 1)
+#
+  2.66971e-05 -0.164819     0.00441628  -0.000290014
+ -0.225434    -0.00152548  -6.16052e-05 -1.89551e-07
+  0.00572621   0.000279823 -3.24736e-05  1.33650e-06
+  0.000666245 -3.21458e-07  2.67728e-06 -7.12995e-06
+#
+#  0d astigmatism (Z5) field dependence relation matrix (scan position 1)
+#
+  2.69339e-05 -0.0441455   -0.0177083    2.77118e-05
+  0.160760    -0.00107439  -2.86292e-05  4.24226e-05
+  0.0200410    0.000445267  0.000108593 -3.87253e-06
+ -0.000195437 -1.78803e-05 -4.89748e-06 -9.74365e-06
+#
+#  45d astigmatism (Z6) field dependence relation matrix (scan position 1)
+#
+ -8.69638e-06  0.154590     0.00123191   0.000154521
+  0.0539785    0.0407051   -8.95404e-05  1.59422e-06
+  0.00265759  -0.000107914 -6.65494e-05  2.78200e-06
+ -0.000558966 -0.000182704  1.18456e-06  4.64598e-06
+#
+#  X coma (Z7) field dependence relation matrix (scan position 1)
+#
+ -1.13778e-06  0.000317947  0.000125102 -4.83512e-06
+  0.00540893  -0.000138789  1.97325e-05 -1.42204e-06
+ -0.000198369 -9.01653e-06  9.81996e-07  1.27054e-07
+ -5.26310e-08 -2.50384e-06 -3.27582e-07  5.30385e-07
+#
+#  Y coma (Z8) field dependence relation matrix (scan position 1)
+#
+ -2.41193e-07  0.00460994   9.17658e-06  1.53031e-05
+  0.000789026 -4.13766e-05 -3.81089e-06  1.13147e-06
+  0.000173784 -1.36490e-05 -6.36781e-07  9.21000e-08
+  1.91138e-06  3.89723e-06  1.54603e-07 -1.53196e-07
+#
+#  Spherical (Z11) field dependence relation matrix (scan position 1)
+#
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+########################################################################
+#  Scan position 2 (center position)
+########################################################################
+ 0.0000     = Scan position 2 field offset (arcsec)
+ 0.0000     = Focus (microns RMS) at scan position 2
+ 0.5199     = 0d astigmatism (microns RMS) at scan position 2
+ 0.0855     = 45d astigmatism (microns RMS) at scan position 2
+ 0.0294     = X coma (microns RMS) at scan position 2
+-0.0035     = Y coma (microns RMS) at scan position 2
+ 0.0000     = Spherical (microns RMS) at scan position 2
+#
+#  Focus field dependence relation matrix (scan position 2)
+#
+  2.70077e-05 -0.158207     0.00431563  -0.000275796
+ -0.227155    -0.00137772  -8.41095e-05  2.82307e-06
+  0.00640394   0.000275816 -3.26540e-05  6.59774e-07
+  0.000629442  3.00542e-06  2.77142e-06 -7.55952e-06
+#
+#  0d astigmatism (Z5) field dependence relation matrix (scan position 2)
+#
+  2.65532e-05 -0.0584679   -0.0179713   -9.63182e-06
+  0.159724    -0.000928242  1.83474e-05  3.51296e-05
+  0.0195750    0.000517593  0.000106320 -3.68899e-06
+ -0.000210549 -2.35024e-05 -5.33970e-06 -9.16708e-06
+#
+#  45d astigmatism (Z6) field dependence relation matrix (scan position 2)
+#
+ -9.11308e-06  0.156408     0.00155349   0.000138842
+  0.0710085    0.0405511   -2.40471e-05 -1.24877e-06
+  0.00198172  -0.000196294 -6.15574e-05  2.63092e-06
+ -0.000564125 -0.000180184  2.41496e-07  5.10499e-06
+#
+#  X coma (Z7) field dependence relation matrix (scan position 2)
+#
+ -9.81832e-07  0.000408227  0.000115299 -5.07212e-06
+  0.00531611  -0.000113041  1.93093e-05 -1.74827e-06
+ -0.000199088 -8.29600e-06  9.30004e-07  1.22600e-07
+  2.27563e-07 -2.88355e-06 -6.93581e-07  6.70202e-07
+#
+#  Y coma (Z8) field dependence relation matrix (scan position 2)
+#
+  2.82937e-07  0.00468454   3.06191e-05  1.38959e-05
+  0.000801770 -6.26943e-05 -2.37354e-06  1.16892e-06
+  0.000149643 -1.40167e-05 -1.25874e-06  9.47677e-08
+  2.87903e-06  3.25868e-06  3.98568e-07  3.11692e-07
+#
+#  Spherical (Z11) field dependence relation matrix (scan position 2)
+#
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+########################################################################
+#  Scan position 3 (upper position)
+########################################################################
+ 58.0927    = Scan position 3 field offset (arcsec)
+-0.1143     = Focus (microns RMS) at scan position 3
+ 0.5448     = 0d astigmatism (microns RMS) at scan position 3
+ 0.2135     = 45d astigmatism (microns RMS) at scan position 3
+ 0.0292     = X coma (microns RMS) at scan position 3
+ 0.0000     = Y coma (microns RMS) at scan position 3
+ 0.0000     = Spherical (microns RMS) at scan position 3
+#
+#  Focus field dependence relation matrix (scan position 3)
+#
+  2.69657e-05 -0.151617     0.00423907  -0.000263170
+ -0.228435    -0.00126288  -0.000102776  4.87950e-06
+  0.00701729   0.000271629 -3.29841e-05  5.49452e-07
+  0.000595261  5.63681e-06  2.59822e-06 -7.26482e-06
+#
+#  0d astigmatism (Z5) field dependence relation matrix (scan position 3)
+#
+  2.46076e-05 -0.0729329   -0.0182778   -4.53779e-05
+  0.158335    -0.000732984  5.63412e-05  2.79741e-05
+  0.0192178    0.000585496  0.000104373 -2.80269e-06
+ -0.000228640 -3.02636e-05 -5.18355e-06 -8.06733e-06
+#
+#  45d astigmatism (Z6) field dependence relation matrix (scan position 3)
+#
+ -9.79298e-06  0.158219     0.00182811   0.000120369
+  0.0871826    0.0404522    4.05890e-05 -4.22449e-06
+  0.00131023  -0.000276323 -5.61682e-05  2.96997e-06
+ -0.000567112 -0.000178436 -1.28734e-06  5.87530e-06
+#
+#  X coma (Z7) field dependence relation matrix (scan position 3)
+#
+ -9.42356e-07  0.000488401  0.000105792 -5.24407e-06
+  0.00524565  -8.91173e-05  1.80425e-05 -2.22831e-06
+ -0.000199658 -7.57659e-06  9.88837e-07  2.76723e-07
+ -8.57298e-08 -3.42975e-06 -4.15991e-07  1.08560e-06
+#
+#  Y coma (Z8) field dependence relation matrix (scan position 3)
+#
+  3.91237e-07  0.00476791   4.85949e-05  1.24254e-05
+  0.000776486 -8.15391e-05 -2.38264e-07  1.26622e-06
+  0.000126522 -1.45188e-05 -1.50976e-06  1.02494e-07
+  3.87847e-06  3.53006e-06  3.45333e-07  2.72018e-07
+#
+#  Spherical (Z11) field dependence relation matrix (scan position 3)
+#
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
+   0.0000000   0.0000000    0.0000000    0.0000000
